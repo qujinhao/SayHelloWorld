@@ -1,0 +1,32 @@
+package 练习;
+import java.util.Scanner;
+/**
+*@program:输出金字塔
+*@Description:输入想要的金字塔行数，就可以输出*字符形金字塔，行数为你所输入的数。
+*@author:qjh
+*@date:2019-9-18
+*/
+public class jinzitaperfect {
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int i;
+		System.out.print("请输入金字塔行数：");
+		Scanner scan = new Scanner(System.in);
+		i = scan.nextInt();
+		for (int j = 1; j <= i; j++) {
+			int times = (2*j)-1;
+			int time=0;
+			while(time!=(i-j))
+			{
+				System.out.print(" ");
+				time++;
+			}
+			while (times != 0) {
+				System.out.print("*");
+				times--;
+			}
+			System.out.print("\n");
+		}
+
+	}
+}
