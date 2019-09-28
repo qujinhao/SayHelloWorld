@@ -1,0 +1,25 @@
+package prictice;
+class Char{
+	char ch;
+}
+/*
+ * Description:运用函数调用，来改变值,同时使用到函数的构造及调用
+ * Author:     qjh
+ * Data:       2019-9-28
+*/
+
+public class Replace {
+	static void f(Char c) {
+		if(c.ch == 'a')
+			c.ch = 'z';
+	}
+
+
+public static void main(String[] args) {
+	Char ci = new Char();
+	ci.ch = 'a';
+	System.out.println(ci.ch);
+	f(ci);
+	System.out.println(ci.ch);
+}
+}
