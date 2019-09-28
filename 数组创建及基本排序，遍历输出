@@ -1,0 +1,25 @@
+package prictice;
+/*
+ *Describe：创建数组，并使用随机函数来制造数组，并且也运用数组排序函数sort，来使得最终结果为随机数产生的排序数组 
+ *Author：      qjh
+ *Data:    2019-9-28
+ * 
+ */
+import java.util.Arrays;          //引用
+public class ArrayLen {
+	/*
+	 * 1。创建数组 2.产生随机数 3.用随机数制造数组 
+	 * 4.用排序函数来使数组变的有序 
+	 * 5.用数组遍历的特别for循环语法来输出结果
+	 * 
+	 */
+	public static void main(String[] args) {
+		int a[] = new int [(int)(Math.random()*10)];
+		for(int i = 0; i<a.length; ++i)
+			a[i] = (int)(Math.random()*100);
+		Arrays.sort(a,0,a.length);
+		for(int value:a)
+			System.out.println(value);
+	}
+
+}
