@@ -1,0 +1,28 @@
+package ggggg;
+/*
+*Description：创建一个子类对象时，父类的构造方法也会被调用
+*Author：qjh
+*Date:2019-10.14
+*/
+class Game{
+	Game(int i){
+		System.out.println("构造Game"+i);
+	}
+}
+class BoardGame extends Game{
+	BoardGame(int i){
+		super(i);
+		System.out.println("构造BoardGame"+i);
+	}
+	
+}
+public class Ghhhh extends BoardGame {
+	Ghhhh(){
+		super(44);
+		System.out.println("构造Ghhhh");
+	}
+	public static void main(String[] args) {
+		Ghhhh x = new Ghhhh();
+	}
+
+}
